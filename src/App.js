@@ -10,7 +10,7 @@ function App() {
   return (
       <React.Fragment>
           <NavBar />
-          <Route exact path="/" component={Buscador} />
+          <Route exact path="/filmes_app" component={Buscador} />
           <Route path="/favs" component={Favorites} />
           <Route path="/movie/:id" component={Movie} />
       </React.Fragment>

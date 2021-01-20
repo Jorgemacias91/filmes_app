@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+
+.text_white{
+    color:white;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.boton {
+    padding-top: 6px;
+}
+.form_container {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.form_container .boton {
+    margin-left: 20px;
+}
+.label {
+    padding-right: 10px;
+    color:white;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin: auto;
+    
+}
+
+
+.container .card{
+    width: 33%;
+    height: 460px;
+    border-radius:8px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin:20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translate(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.container .card .imagen{
+    width: 230px;
+    height: 300px;
+}
