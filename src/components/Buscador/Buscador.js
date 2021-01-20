@@ -40,11 +40,12 @@ export class Buscador extends Component {
           <button type="submit" className={style.boton}>BUSCAR</button>
         </form>
         <ul>
+        <div className={style.container}>
         {this.props.movies && this.props.movies.map((eve, i) => (
           <div>
             <div key={eve.imdbID}>
 
-              <div className={style.container}>
+              
 
                 <div className={style.card}>
                     <NavLink to={`/movie/${eve.imdbID}`}>
@@ -58,9 +59,10 @@ export class Buscador extends Component {
                  
                   </div>
                 </div>
-            </div>
+           
     
         ))}
+         </div>
         </ul>
       </div>
     );

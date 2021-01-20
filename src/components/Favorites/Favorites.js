@@ -11,11 +11,12 @@ export class ConnectedList extends Component {
       <div>
         <h2 className={style.text_wc}>Películas Favoritas</h2>
         <ul>
+        <div className={style.container}>
           {this.props.movie && this.props.movie.map((eve) =>(
             <div>
 
             <div key={eve.imdbID}>
-              <div className={style.container}>
+              
                 <div className={style.card}>
                     <NavLink to={`/movie/${eve.id}`}>
                     <img src={eve.img} className={style.imagen}/>
@@ -27,8 +28,9 @@ export class ConnectedList extends Component {
                 </div>  
              </div>
           </div>
-        </div>
+      
           ))}
+            </div>
         </ul>
       </div>
     );
