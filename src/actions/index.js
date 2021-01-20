@@ -11,7 +11,7 @@ export function addMovieFavorite(payload) {
   
   export function getMovies(titulo) {
     return function(dispatch) {
-      const apykey = "20dac387"
+      const apykey = "ingresa aqui el apikey de OMDB"
       return fetch(`http://www.omdbapi.com/?apikey=${apykey}&s=${titulo}`)
         .then(response => response.json())
         .then(json => {
@@ -29,7 +29,7 @@ export function removeMovieFavorite(payload){
 
 export function getMovieDetail(id){
     return function(dispatch){
-      const apykey = "20dac387"
+      const apykey = "ingresa aqui el apikey de OMDB"
         return fetch(`http://www.omdbapi.com/?apikey=${apykey}&i=${id}`)
         .then(response => response.json())
         .then(json => {
